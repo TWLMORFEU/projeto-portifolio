@@ -89,8 +89,8 @@ section#ficha img.foto {
   object-position: center ; /*posiciona a imagem*/
   overflow: hidden; /*impede o vazamento da imagem*/
   border-radius: 35%;
-  border: 4px solid  var(--fundo-card);
-  outline: 4px solid  var(--destaque);
+  border: 2px solid  var(--fundo-card);
+  outline: 3px solid  var(--destaque);
   display: block;
   margin: auto;
   margin-bottom: 15px;
