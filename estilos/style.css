@@ -69,8 +69,17 @@ nav#menu a:hover {
 }
 
 main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#ficha {
   background-color: var(--fundo-card);
-  padding: 20px;border-radius: 8px;
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
 }
 
 section#ficha img.foto {
@@ -100,4 +109,13 @@ div#social {
   font-size: 1.6em;
   align-items: center;
   margin-top: 15px;
+}
+
+div#social a {
+  color: var(--destaque);
+  transition: 0.4s;
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
 }
