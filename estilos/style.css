@@ -180,3 +180,9 @@ article h2 {
   background-color: var(--destaque-inverso);
   border-radius: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
