@@ -235,9 +235,32 @@ article h2 {
   cursor: pointer;
 }
 
+#projeto-container .foto {
+  width: 100%;
+  aspect-ratio: 16/9; /* Regula a proporção da imagem */
+  object-fit: cover; /*Regula a imagem de maneira adaptavel em espaço situado*/
+  overflow: hidden; /*Esconde conteudo caso seja vazado*/
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 768px) {
   #skill-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projeto-container .projeto {
+    flex-direction: row-reverse;
+    justify-content:space-between;
+  }
+
+  #projeto-container .projeto-info {
+    max-width: 80%;
+  }
+
+  #projeto-container .foto {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }
 
