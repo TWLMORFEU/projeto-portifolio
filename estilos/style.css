@@ -215,6 +215,24 @@ article h2 {
   font-size: 1.1em;
 }
 
+.modulo-titulo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: var(--destaque);
+  border-bottom: 2px solid var(--destaque);
+  padding-bottom: 3px;
+}
+
+.modulo-fim {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: var(--destaque-inverso);
+}
+
+
 .btn-vermais {
   background-color: var(--fundo-card);
   color: var(--destaque-inverso);
