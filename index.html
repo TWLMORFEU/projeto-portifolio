@@ -131,32 +131,105 @@
         <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
 
         <div id="formacao-container">
-            <div class="curso">
-                <p class="periodo">2024 - 2025</p>
-                <h3 class="instituicao">Curso em Vídeo</h3>
-                <p class="titulacao"> HTML - CSS ( 200 Horas )</p>
+
+          <div class="curso">
+            <p class="periodo">2024 - 2025</p>
+            <h3 class="instituicao">Curso em Vídeo</h3>
+            <p class="titulacao">HTML - CSS (200 Horas)</p>
+            <button class="btn-vermais" onclick="toggleConteudo(this)">Ver conteúdo</button>
+            <div class="conteudo-detalhado">
+              <ul>
+                <li>HTML5: Estrutura semântica, tags e boas práticas</li>
+                <li>CSS3: Estilização, seletores, pseudo-classes e layouts responsivos</li>
+                <li>Projeto final com página completa e estilizada</li>
+              </ul>
             </div>
-            <div class="curso">
-                <p class="periodo">2024 - 2025</p>
-                <h3 class="instituicao">Curso em Vídeo</h3>
-                <p class="titulacao">Algoritmo ( 40 Horas )</p>
+          </div>
+
+          <div class="curso">
+            <p class="periodo">2024 - 2025</p>
+            <h3 class="instituicao">Curso em Vídeo</h3>
+            <p class="titulacao">Algoritmo (40 Horas)</p>
+            <button class="btn-vermais" onclick="toggleConteudo(this)">Ver conteúdo</button>
+            <div class="conteudo-detalhado">
+              <ul>
+              <li>Introdução à lógica de programação</li>
+              <li>Criação de algoritmos simples</li>
+              <li>Entrada de dados e operadores</li>
+              <li>Operadores lógicos e relacionais</li>
+              <li>Introdução ao Scratch</li>
+              <li>Exercícios resolvidos de algoritmos</li>
+              <li>Estruturas condicionais (if/else)</li>
+              <li>Estruturas de repetição (while, for, repeat)</li>
+              <li>Procedimentos e funções</li>
+              <li>Vetores e matrizes</li>
+            </ul>
             </div>
-             <div class="curso">
-                <p class="periodo">2025 - 2025</p>
-                <h3 class="instituicao">Curso em Vídeo</h3>
-                <p class="titulacao">Git e GitHub ( 20 Horas ) </p>
+          </div>
+
+          <div class="curso">
+            <p class="periodo">2025 - 2025</p>
+            <h3 class="instituicao">Curso em Vídeo</h3>
+            <p class="titulacao">Git e GitHub (20 Horas)</p>
+            <button class="btn-vermais" onclick="toggleConteudo(this)">Ver conteúdo</button>
+            <div class="conteudo-detalhado">
+              <ul>
+                <li>Versionamento de código com Git</li>
+                <li>Criação e gerenciamento de repositórios no GitHub</li>
+                <li>Branches, commits e pull requests</li>
+              </ul>
             </div>
-            <div class="curso">
-                <p class="periodo">2025 - 2026</p>
-                <h3 class="instituicao">Curso em Vídeo</h3>
-                <p class="titulacao">Inteligência Artificial ( 80 Horas ) - <strong>Em Desenvolvimento</strong></p>
+          </div>
+
+          <div class="curso">
+            <p class="periodo">2025 - 2026</p>
+            <h3 class="instituicao">Curso em Vídeo</h3>
+            <p class="titulacao">Inteligência Artificial (80 Horas) - <strong>Em Desenvolvimento</strong></p>
+            <button class="btn-vermais" onclick="toggleConteudo(this)">Ver conteúdo</button>
+            <div class="conteudo-detalhado">
+              <ul>
+                <li>Conceitos de IA e aprendizado de máquina</li>
+                <li>Introdução a redes neurais e algoritmos genéticos</li>
+                <li>Projetos introdutórios com Python e IA</li>
+              </ul>
             </div>
-            <div class="curso">
-                <p class="periodo">2025 - 2026</p>
-                <h3 class="instituicao">Udemy</h3>
-                <p class="titulacao">JavaScript (ES6+), TypeScript, React, Node.js, Express, MongoDB, MySQL, POO, SOLID, testes, padrões de projeto e deploy em servidor Linux. ( 146 Horas ) - <strong>Em Desenvolvimento</strong></p>
+          </div>
+
+          <div class="curso">
+            <p class="periodo">2025 - 2026</p>
+            <h3 class="instituicao">Udemy</h3>
+            <p class="titulacao">
+              Curso de JS/TS Full-Stack (146 Horas) - <strong>Em Desenvolvimento</strong>
+            </p>
+            <button class="btn-vermais" onclick="toggleConteudo(this)">Ver conteúdo</button>
+            <div class="conteudo-detalhado">
+                <ul>
+                  <li>JavaScript Básico, Funcional e Orientado a Objetos (ES6+, front-end e back-end)</li>
+                  <li>TypeScript - um superset do JavaScript com tipagem estática (front-end e back-end)</li>
+                  <li>Node, Express, MongoDB e MySQL/MariaDB (Back-end)</li>
+                  <li>Webpack e Babel (Front-end)</li>
+                  <li>Sistema de login com session (front-end e back-end)</li>
+                  <li>Sistema de login com JWT (front-end e back-end)</li>
+                  <li>Criação de projetos com Node, Express e EJS (front-end e back-end)</li>
+                  <li>Configuração de um servidor Linux para Deploy (Ubuntu Server)</li>
+                  <li>Configurações de segurança para o servidor (SSH e TLS - Https)</li>
+                  <li>Utilização de noSQL com mongoose (MongoDB)</li>
+                  <li>Utilização de SQL com sequelize (MySQL e MariaDB)</li>
+                  <li>Criação de API Rest com Node + Express + Sequelize (back-end)</li>
+                  <li>React JS com React Hooks + Redux com Redux Saga (front-end)</li>
+                  <li>Princípios da programação orientada a objetos</li>
+                  <li>Princípios S.O.L.I.D</li>
+                  <li>Testes automatizados com o Jest</li>
+                  <li>Expressões Regulares (Bônus)</li>
+                  <li>Padrões de projeto GOF - Design Patterns (Bônus)</li>
+                  <li>NestJS + Strapi + PostgreSQL (com CSR, SSR, SSG e ISR)</li>
+                  <li>HTML5 e CSS3 (Bônus Extra)</li>
+                </ul>
             </div>
+          </div>
+
         </div>
+
         
       </article>
 

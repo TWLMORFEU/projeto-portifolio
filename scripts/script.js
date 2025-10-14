@@ -38,3 +38,13 @@ navLinks.forEach(link => {
     }
   });
 });
+
+
+function toggleConteudo(botao) {
+  const conteudo = botao.nextElementSibling;
+  const visivel = conteudo.style.display === "block";
+
+  conteudo.style.display = visivel ? "none" : "block";
+  botao.textContent = visivel ? "Ver conteúdo" : "Ocultar conteúdo";
+}
+
