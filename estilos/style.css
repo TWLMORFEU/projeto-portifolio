@@ -29,8 +29,6 @@
 }
 
 
-
-
 :root {
   --fundo-principal: #f5f5f5;
   --texto: #222222;
@@ -38,6 +36,15 @@
   --destaque: #000000;
   --destaque-inverso: #444444;
   --fundo-card: #ffffff;
+}
+
+body.escuro {
+  --fundo-principal: #050505;
+  --texto: #cfcfcf;
+  --texto-inverso: #000000;
+  --destaque: #e6e6e6;
+  --destaque-inverso: #777777;
+  --fundo-card: #0d0d0d;
 }
 
 
@@ -191,7 +198,7 @@ article h2 {
 }
 
 #formacao-container .curso {
-  background-color: var(--fundo-principal);
+  background-color: var(-);
   border-radius: 8px;
   border-left: 5px solid var(--destaque-inverso);
   padding: 10px 10px 10px 15px;
