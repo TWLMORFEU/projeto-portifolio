@@ -30,24 +30,24 @@
 
 
 :root {
-  --fundo-principal: #fff5f5;
-  --texto: #2a1b1b;
+  --fundo-principal: #fafafa;      /* quase branco */
+  --texto: #1f1f1f;                /* preto suave */
   --texto-inverso: #ffffff;
-  --destaque: #dc2626; /* vermelho forte */
-  --destaque-inverso: #fecaca; /* vermelho claro */
-  --fundo-card: #ffffff;
+  --destaque: #000000;             /* preto intenso */
+  --destaque-inverso: #4a4a4a;     /* cinza escuro */
+  --fundo-card: #ffffff;           /* branco puro */
 }
 
 
 
 
 body.escuro {
-  --fundo-principal: #0a0606;       /* preto com sutil tom vermelho */
-  --texto: #e3d4d4;                 /* cinza claro avermelhado */
+  --fundo-principal: #0c0c0c;      /* preto profundo */
+  --texto: #e2e2e2;                /* cinza claro legível */
   --texto-inverso: #000000;
-  --destaque: #8b1111;              /* vermelho escuro profundo */
-  --destaque-inverso: #2a0a0a;      /* preto avermelhado */
-  --fundo-card: #120808;            /* preto com leve presença de vermelho */
+  --destaque: #f5f5f5;             /* quase branco */
+  --destaque-inverso: #6a6a6a;     /* cinza médio */
+  --fundo-card: #161616;           /* cinza bem escuro */
 }
 
 
@@ -82,7 +82,7 @@ nav#menu ul {
 
 nav#menu a {
   text-decoration: none;
-  color: var(--texto-inverso);
+  color: var(--fundo-principal);
   font-weight: 600px;
   padding: 12px 15px;
   border-radius: 5px;
@@ -90,7 +90,7 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-  background-color: var(--destaque-inverso);
+  background-color: var(--texto-inverso);
   color: var(--destaque);
 
 }
