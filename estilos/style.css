@@ -254,6 +254,10 @@ article h2 {
   color: var(--destaque-inverso);
 }
 
+.curso.ativo .conteudo-detalhado {
+  max-height: 3000px;
+  opacity: 1;
+}
 
 .btn-vermais {
   background-color: var(--fundo-card);
@@ -285,24 +289,18 @@ article h2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .conteudo-detalhado {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: var(--destaque-inverso);
+  line-height: 1.5;
+
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.6s ease, opacity 0.4s ease;
-  color: var(--destaque-inverso);
-  margin-top: 10px;
 }
 
-.curso.ativo .conteudo-detalhado {
-  max-height: 3000px;
-  opacity: 1;
-}
-
-.btn-vermais {
-  cursor: pointer;
-}
 
 
 .conteudo-detalhado ul {
@@ -339,6 +337,19 @@ article h2 {
   overflow: hidden; /*Esconde conteudo caso seja vazado*/
   border-radius: 8px;
 }
+
+.descricao {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.projeto.ativo .descricao {
+  max-height: 300px; /* valor suficiente */
+  opacity: 1;
+}
+
 
 @media screen and (min-width: 768px) {
 

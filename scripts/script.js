@@ -42,6 +42,20 @@ document.querySelectorAll('.btn-vermais').forEach(botao => {
   });
 });
 
+const botoes = document.querySelectorAll('.btn-vermais');
+
+botoes.forEach(botao => {
+  botao.addEventListener('click', () => {
+    const projeto = botao.closest('.projeto');
+    projeto.classList.toggle('ativo');
+    projeto.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+    });
+  });
+});
+
+
 
 // Scroll suave para links de navegação
 const navlinks = document.querySelectorAll('#menu ul  a.link');
