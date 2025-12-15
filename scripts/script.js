@@ -22,14 +22,26 @@ botao.addEventListener('click', () => {
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
+document.querySelectorAll('.btn-vermais').forEach(botao => {
+  botao.addEventListener('click', () => {
+    const curso = botao.closest('.curso');
 
-function toggleConteudo(botao) {
-  const conteudo = botao.nextElementSibling;
-  const visivel = conteudo.style.display === "block";
+    curso.classList.toggle('ativo');
 
-  conteudo.style.display = visivel ? "none" : "block";
-  botao.textContent = visivel ? "Ver conteúdo" : "Ocultar conteúdo";
-}
+    botao.textContent = curso.classList.contains('ativo')
+      ? 'Ocultar conteúdo'
+      : 'Ver conteúdo';
+
+    // garante que o início do conteúdo fique visível
+    if (curso.classList.contains('ativo')) {
+      curso.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
 
 // Scroll suave para links de navegação
 const navlinks = document.querySelectorAll('#menu ul  a.link');
