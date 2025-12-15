@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
-   ffffff
-   99b9ff
-   000000
-   390b51
-   14130f
+  ffffff
+  99b9ff
+  000000
+  390b51
+  14130f
 
   Variáveis para cores:
   --fundo-principal
@@ -30,29 +30,22 @@
 
 
 :root {
-  --fundo-principal: #fafafa;      /* quase branco */
-  --texto: #1f1f1f;                /* preto suave */
-  --texto-inverso: #ffffff;
-  --destaque: #000000;             /* preto intenso */
-  --destaque-inverso: #4a4a4a;     /* cinza escuro */
-  --fundo-card: #ffffff;           /* branco puro */
+  --fundo-principal: #f5f5f5;
+  --texto: #222222;
+  --texto-inverso:#ffffff;
+  --destaque: #000000;
+  --destaque-inverso: #282929;
+  --fundo-card: #ffffff;
 }
-
-
-
 
 body.escuro {
   --fundo-principal: #0c0c0c;      /* preto profundo */
   --texto: #e2e2e2;                /* cinza claro legível */
   --texto-inverso: #000000;
-  --destaque: #f5f5f5;             /* quase branco */
-  --destaque-inverso: #6a6a6a;     /* cinza médio */
+  --destaque: #5e5e5e;             /* quase branco */
+  --destaque-inverso: #8f8f8f;     /* cinza médio */
   --fundo-card: #161616;           /* cinza bem escuro */
 }
-
-
-
-
 
 
 body {
