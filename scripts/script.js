@@ -22,19 +22,28 @@ botao.addEventListener('click', () => {
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
-document.querySelectorAll('.btn-vermais').forEach(botao => {
+
+const botoesCursos = document.querySelectorAll('#formacao-container .btn-vermais');
+const cursos = document.querySelectorAll('#formacao-container .curso');
+
+botoesCursos.forEach(botao => {
   botao.addEventListener('click', () => {
-    const curso = botao.closest('.curso');
+    const cursoAtual = botao.closest('.curso');
+    const jaEstaAtivo = cursoAtual.classList.contains('ativo');
 
-    curso.classList.toggle('ativo');
+    // fecha todos os cursos
+    cursos.forEach(curso => {
+      curso.classList.remove('ativo');
+      const btn = curso.querySelector('.btn-vermais');
+      if (btn) btn.textContent = 'Ver conteúdo';
+    });
 
-    botao.textContent = curso.classList.contains('ativo')
-      ? 'Ocultar conteúdo'
-      : 'Ver conteúdo';
+    // abre apenas se não estava aberto
+    if (!jaEstaAtivo) {
+      cursoAtual.classList.add('ativo');
+      botao.textContent = 'Ocultar conteúdo';
 
-    // garante que o início do conteúdo fique visível
-    if (curso.classList.contains('ativo')) {
-      curso.scrollIntoView({
+      cursoAtual.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -42,16 +51,32 @@ document.querySelectorAll('.btn-vermais').forEach(botao => {
   });
 });
 
-const botoes = document.querySelectorAll('.btn-vermais');
+ 
+const botoesProjetos = document.querySelectorAll('#projeto-container .btn-vermais');
+const projetos = document.querySelectorAll('#projeto-container .projeto');
 
-botoes.forEach(botao => {
+botoesProjetos.forEach(botao => {
   botao.addEventListener('click', () => {
-    const projeto = botao.closest('.projeto');
-    projeto.classList.toggle('ativo');
-    projeto.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+    const projetoAtual = botao.closest('.projeto');
+    const jaEstaAtivo = projetoAtual.classList.contains('ativo');
+
+    // fecha todos os projetos
+    projetos.forEach(projeto => {
+      projeto.classList.remove('ativo');
+      const btn = projeto.querySelector('.btn-vermais');
+      if (btn) btn.textContent = 'Saiba mais...';
     });
+
+    // abre apenas se não estava aberto
+    if (!jaEstaAtivo) {
+      projetoAtual.classList.add('ativo');
+      botao.textContent = 'Ver menos';
+
+      projetoAtual.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   });
 });
 
